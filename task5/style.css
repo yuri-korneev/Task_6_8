@@ -1,0 +1,40 @@
+input[type=text] {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(38, 36, 155);
+    border-radius: 4px;
+    font: 16px "Trebuchet MS", "Lucida Sans";
+    background-color: #3CBC8D;
+    color: white;
+    }
+
+button {
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 5px 15px 15px 0;
+	border-radius: 4px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #3775dd;
+	cursor: pointer;
+	}
+
+button:hover {
+	background-color: #002fed;
+    }
+
+label, p {
+    margin-left: 20px;
+    font-weight: bold;
+    }
+
+#duplicateField {
+    font: 16px "Trebuchet MS", "Lucida Sans";
+    color:#3775dd;
+    }

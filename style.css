@@ -1,0 +1,42 @@
+.list {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 16px;
+    padding: 5px;
+    counter-reset: link1;
+    width: 200px;
+    }
+
+.list a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: .5em .5em .5em 2em;
+    margin: .5em 1em;
+    background: #beb0a1;
+    color: black;
+    border-radius: .5em;
+    transition: .3s ease-out;
+    }
+    
+.list a:hover {background: #e4dbd4;}
+
+.list a:before {
+    content: counter(link1);
+    counter-increment: link1;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #6aaa98;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    }
+
+.list a:hover:before {transform: rotate(360deg);}

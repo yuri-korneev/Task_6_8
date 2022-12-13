@@ -1,0 +1,39 @@
+p {
+    margin: 20px 20px;
+    padding: .5em .5em .5em .5em;
+    background: #beb0a1;
+    color: black;
+    border-radius: .5em;
+    transition: .3s ease-out;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    }
+
+code {
+    margin-left: 20px;
+    color: #098562;   
+    }
+
+p::after {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-top: -10px;
+    top: 50%;
+    border-left: 10px solid #2a76b9;
+    right: -10px;
+    }
+
+.triangle-down {
+        margin-left: 160px;
+        margin-bottom: 10px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 25px solid #2a76b9;
+    }
+   
+p:hover {background: #e4dbd4;}
